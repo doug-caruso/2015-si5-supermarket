@@ -1,27 +1,15 @@
 var ProductHTMLService = {
 
-displayAddedItem: function(item) {
-        var dt = HTMLService.createDT(item.nome);
-        var dd = HTMLService.createDD(item.preco);
-        HTMLService.addToDefinitionList(dt);
-        HTMLService.addToDefinitionList(dd);
-        HTMLService.displayTotal(item.price);
-    },
-    
-    createDT: function(itemName) {
-        var dt = document.createElement('dt');
-        dt.innerHTML = itemName;
-        return dt;
-    },
-    
-    createDD: function(itemPrice) {
-        var dd = document.createElement('dd');
-        dd.innerHTML = itemPrice;
-        return dd;
-    },
-    
-    addToDefinitionList: function (item) {
-        var dl = document.getElementById('list-products');
-        dl.appendChild(item);
+displayAddedProduct: function(item) {
+        var tb = document.createElement('tbody');
+        var nome = item.nome;
+        var tr = document.createElement('tr');
+        var td = tr.appendChild(document.createElement('td'));
+        td.innerHTML = nome;
+        var td2 = tr.appendChild(document.createElement('td'));
+        td2.innerHTML = item.preco;
+        var td3 = tr.appendChild(document.createElement('td'));
+        td3.innerHTML = item.estoque;        
+        document.getElementById("tbl-products").appendChild(tr);
     }
 }

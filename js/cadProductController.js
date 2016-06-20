@@ -1,7 +1,7 @@
 var cadProductController = {
     init: function() {
         cadProductController.setForm();
-        cadProductController.showProdutos();
+        cadProductController.displayProdutos();
     },
 
     setForm: function () {
@@ -28,10 +28,10 @@ var cadProductController = {
         ProductHTMLService.displayAddedProduct(produto);
     },
 
-    showProdutos: function () {
-        var produtos =
+    displayProdutos: function () {
+        var produtos = ProductService.getProducts();
         produtos.forEach(ProductHTMLService.displayAddedProduct);
-    },
+    }
 };
 
 cadProductController.init();
