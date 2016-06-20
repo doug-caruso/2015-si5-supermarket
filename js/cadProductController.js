@@ -1,7 +1,7 @@
 var cadProductController = {
     init: function() {
         cadProductController.setForm();
-        cadProductController.displayProdutos();
+        cadProductService.loadProducts();
     },
 
     setForm: function () {
@@ -17,21 +17,16 @@ var cadProductController = {
         produto.marca = document.getElementById("marca").value;
         produto.preco = document.getElementById("preco").value;
         produto.departamento = document.getElementById("departamento").value;
-        produto.codigo = document.getElementById("nome").value;
         produto.estoque = document.getElementById("estoque").value;
         produto.imagem = document.getElementById("imagem").value;
         cadProductController.addProduto(produto);
+        window.open("produtos.html");
     },
 
     addProduto: function (produto) {
-        ProductService.addProduct(produto);
-        ProductHTMLService.displayAddedProduct(produto);
+        cadProductService.addProduct(produto);
     },
 
-    displayProdutos: function () {
-        var produtos = ProductService.getProducts();
-        produtos.forEach(ProductHTMLService.displayAddedProduct);
-    }
 };
 
 cadProductController.init();
