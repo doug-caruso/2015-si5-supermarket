@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro Produto</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+</head>
+<body>
+    <form id="form-prod">
+        <div class="form-group">
+            <label for="codigo">Código de Barras: </label>
+            <input type="number" class="form-control" id="codigo">
+        </div>
+        <div class="form-group">
+            <label for="nome">Nome: </label>
+            <input type="text" class="form-control" id="nome">
+        </div>
+        <div class="form-group">
+            <label for="marca">Marca: </label>
+            <input type="text" class="form-control" id="marca">
+        </div>
+        <div class="form-group">
+            <label for="preco">Preço: </label>
+            <input type="text" class="form-control" id="preco">
+        </div>
+        <div class="form-group">
+            <label for="Departamento">Departamento: </label>
+            <select name="optDepartamento" id="departamento" class="form-control">
+                <option value="bebidas">Bebidas</option>
+					<option value="mercearia">Mercearia</option>
+					<option value="biscoito-chocolate">Biscoitos e Chocolates</option>
+					<option value="hortifrut">Hortifrut</option>
+					<option value="frios">Frios</option>
+					<option value="acougue">Açougue</option>
+					<option value="perfumaria">Perfumaria</option>
+					<option value="limpeza">Limpeza</option>
+					<option value="bazar">Bazar</option>
+					<option value="animais">Animais</option>	
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="estoque">Estoque Inicial: </label>
+            <input type="number" class="form-control" id="estoque">
+        </div>
+
+        <div class="form-group">
+            <label for="imagems">Imagem: </label>
+            <input type="file" class="form-control" id="imagem">
+        </div>
+    <button type="submit">Salvar</button>
+    </form>
+
+    <div class="title">
+            <dl id="list-products"></dl>
+        </div>
+<script src="js/cadProductController.js"></script>
+<script src="js/ProductService.js"></script>
+
+</body>
+</html>
