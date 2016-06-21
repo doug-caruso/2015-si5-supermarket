@@ -1,24 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Cadastro Produto</title>
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    <a href="cad-produto.html" class="btn btn-primary" >Cadastrar Produto</a>
-     <table class="table" id="tb">
-        <tbody id="tbl-products">
-         <th>Produto</th>
-         <th>Marca</th>
-         <th>Preço</th>
-         <th>Estoque</th>
-         <tbody>
-     </table>
-     </div>
-<script src="js/ProductService.js"></script>
-<script src="js/ProductHTMLService.js"></script>
-<script src="js/ProductController.js"></script>
+    <div id="menuprod">
+    <a href="cad-produto.html" class="btn btn-primary">Cadastrar Produto</a>
+    <a href="" class="btn btn-primary">Gerar Relatório</a>
+    </div>
+    <div class="form-group" id="proddiv">
+        <table class="table" id="tb">
+            <tbody id="tbl-products">
+                <th>Produto</th>
+                <th>Marca</th>
+                <th>Preço</th>
+                <th>Estoque</th>
+                <tbody>
+        </table>
+    </div>
+    <script src="js/ProductService.js"></script>
+    <script src="js/ProductHTMLService.js"></script>
+    <script src="js/ProductController.js"></script>
 </body>
+
 </html>
