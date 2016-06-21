@@ -42,8 +42,9 @@
             <label for="Departamento" class="col-sm-2 control-label">Departamento</label>
             <div class="col-sm-10">
                 <select name="optDepartamento" id="departamento" class="form-control">
-                <option value="bebidas">Bebidas</option>
-					<option value="mercearia">Mercearia</option>
+                    <option value="0" style="display:none;">Selecione uma opção...</option>
+                    <option value="bebidas">Bebidas</option>
+                    <option value="mercearia">Mercearia</option>
 					<option value="biscoito-chocolate">Biscoitos e Chocolates</option>
 					<option value="hortifrut">Hortifrut</option>
 					<option value="frios">Frios</option>
@@ -70,7 +71,7 @@
             </div>
         </div>
         <a href="produtos.html" class="btn btn-danger">Voltar</a>
-        <button type="submit" formaction="produto.html" class="btn btn-primary">Salvar</button>
+        <button type="submit" formaction="produtos.html" class="btn btn-primary">Salvar</button>
     </form>
     <script src="js/cadProductService.js"></script>
     <script src="js/ProductHTMLService.js"></script>
