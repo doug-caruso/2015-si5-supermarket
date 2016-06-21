@@ -3,14 +3,24 @@
     margin: 0 auto;
     padding: 20px;
     text-align:center;
+    background-color: honeydew;
 }
 #proddiv{
     width:800px;
     margin: 0 auto;
     padding: 20px;
     text-align:center;
+    background-color:  honeydew;
 }
 #menuprod{
+    width:800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align:center;
+    background-color: silver;
+}
+
+#menucadprod{
     width:800px;
     margin: 0 auto;
     padding: 20px;
