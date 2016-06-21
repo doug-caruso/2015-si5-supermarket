@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <nav class="navbar navbar-default">
+     <nav class="navbar navbar-default">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -30,12 +30,12 @@
   </div><!-- /.container-fluid -->
 </nav>
     <div class="form-group" id="menuprod">
-        <a href="cad-produto.html" class="btn btn-primary">Cadastrar Produto</a>
-        <a href="relatorios.html" class="btn btn-primary">Gerar Relatório</a>
+        <a onclick="displayProductsLess10()" class="btn btn-primary">Produtos com menos de 10 em estoque</a>
+        <a onclick="displayMoreThan100()" class="btn btn-primary">Produtos com preço maior que R$100</a>
     </div>
     <div class="form-group" id="proddiv">
      <table class="table" id="tb">
-        <tbody id="tbl-products">
+        <tbody id="tbl-products-10">
          <th>Código</th>
          <th>Produto</th>
          <th>Marca</th>

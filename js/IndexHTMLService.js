@@ -17,8 +17,6 @@ var IndexHTMLService = {
     },
 
     displayFilteredProducts: function (item, filtro) {
-        console.log(filtro);
-        console.log(item.nome);
         if(item.departamento == filtro){        
             var div = document.createElement('div');
             div.className = "col-md-2 divproduto";
