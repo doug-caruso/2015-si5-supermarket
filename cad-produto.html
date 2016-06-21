@@ -65,7 +65,7 @@
         <div class="form-group">
             <label for="imagems" class="col-sm-2 control-label">Imagem: </label>
             <div class="col-sm-10">
-                <input type="file" class="form-control" id="imagem">    
+                <input type="file" id="imagem" onchange="selectFolder(event)" webkitdirectory mozdirectory msdirectory odirectory directory multiple />    
             </div>
         </div>
     <button type="submit" formaction="produto.html" class="btn btn-primary">Salvar</button>
