@@ -4,8 +4,8 @@ var IndexHTMLService = {
         var div = document.createElement('div');
         div.className = "col-md-2 divproduto";
         var img;
-        img = item.imagem.replace("C:\\fakepath\\", "C:\\Users\\doug-\\OneDrive\\Documentos\\WEB\\supermarket\\img\\");
-        div.innerHTML = ('<img src=\"'+img+'\"height="100" width="100" class="img_produto" />');
+        //img = item.imagem.replace("C:\\fakepath\\", "C:\\Users\\doug-\\OneDrive\\Documentos\\WEB\\supermarket\\img\\");
+        div.innerHTML = ('<img src=\"'+item.imagem+'\"height="100" width="100" class="img_produto" />');
         var p = document.createElement('p');
         p.innerHTML = item.nome;
         div.appendChild(p);
@@ -20,9 +20,9 @@ var IndexHTMLService = {
         if(item.departamento == filtro){        
             var div = document.createElement('div');
             div.className = "col-md-2 divproduto";
-            var img;
-            img = item.imagem.replace("C:\\fakepath\\", "C:\\Users\\doug-\\OneDrive\\Documentos\\WEB\\supermarket\\img\\");
-            div.innerHTML = ('<img src=\"'+img+'\"height="100" width="100" class="img_produto" />');
+            //var img;
+            //img = item.imagem.replace("C:\\fakepath\\", "C:\\Users\\doug-\\OneDrive\\Documentos\\WEB\\supermarket\\img\\");
+            div.innerHTML = ('<img src=\"'+item.imagem+'\"height="100" width="100" class="img_produto" />');
             var p = document.createElement('p');
             p.innerHTML = item.nome;
             div.appendChild(p);

@@ -18,9 +18,9 @@ var ProductHTMLService = {
         var td5 = tr.appendChild(document.createElement('td'));
         td5.innerHTML = item.estoque;
         var td6 = tr.appendChild(document.createElement('td'));
-        var img;
-        img = item.imagem.replace("C:\\fakepath\\", "C:\\Users\\doug-\\OneDrive\\Documentos\\WEB\\supermarket\\img\\");
-        td6.innerHTML = ('<img src=\"'+img+'\"height="30" width="30" />');
+        //var img;
+        //img = item.imagem.replace("C:\\fakepath\\", "C:\\Users\\doug-\\OneDrive\\Documentos\\WEB\\supermarket\\img\\");
+        td6.innerHTML = ('<img src=\"'+item.imagem+'\"height="30" width="30" />');
         document.getElementById("tbl-products").appendChild(tr);
     },
 
@@ -42,8 +42,8 @@ var ProductHTMLService = {
             td5.innerHTML = item.estoque;
             var td6 = tr.appendChild(document.createElement('td'));
             var img;
-            img = item.imagem.replace("C:\\fakepath\\", "C:\\Users\\doug-\\OneDrive\\Documentos\\WEB\\supermarket\\img\\");
-            td6.innerHTML = ('<img src=\"'+img+'\"height="30" width="30" />');
+           // img = item.imagem.replace("C:\\fakepath\\", "C:\\Users\\doug-\\OneDrive\\Documentos\\WEB\\supermarket\\img\\");
+            td6.innerHTML = ('<img src=\"'+item.imagem+'\"height="30" width="30" />');
             document.getElementById("tbl-products-10").appendChild(tr);
         }
     },
@@ -66,8 +66,8 @@ var ProductHTMLService = {
             td5.innerHTML = item.estoque;
             var td6 = tr.appendChild(document.createElement('td'));
             var img;
-            img = item.imagem.replace("C:\\fakepath\\", "C:\\Users\\doug-\\OneDrive\\Documentos\\WEB\\supermarket\\img\\");
-            td6.innerHTML = ('<img src=\"'+img+'\"height="30" width="30" />');
+            //img = item.imagem.replace("C:\\fakepath\\", "C:\\Users\\doug-\\OneDrive\\Documentos\\WEB\\supermarket\\img\\");
+            td6.innerHTML = ('<img src=\"'+item.imagem+'\"height="30" width="30" />');
             document.getElementById("tbl-products-10").appendChild(tr);
         }    
     }
