@@ -19,7 +19,7 @@ var ProductHTMLService = {
         td5.innerHTML = item.estoque;
         var td6 = tr.appendChild(document.createElement('td'));
         var img;
-        img = item.imagem.replace("C:\\fakepath\\", "C:\\Users\\suporte01\\Documents\\web\\tr\\TRABALHO\\img\\");
+        img = item.imagem.replace("C:\\fakepath\\", "C:\\Users\\doug-\\OneDrive\\Documentos\\WEB\\supermarket\\img\\");
         td6.innerHTML = ('<img src=\"'+img+'\"height="30" width="30" />');
         document.getElementById("tbl-products").appendChild(tr);
     }
