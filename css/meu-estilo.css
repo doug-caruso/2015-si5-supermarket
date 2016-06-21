@@ -1,0 +1,79 @@
+body{
+    padding: 7px;
+}
+
+.login-cliente{
+    width:800px;
+    margin: 0 auto;
+    padding: 50px;
+    text-align:center;
+}
+
+.cadastro-produto{
+    width:800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align:center;
+}
+
+.cadastro-cliente{
+    width:600px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align:center;
+}
+
+.produtos{
+    width:800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align:center;
+}
+
+.usuario{
+    width:800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align:center;
+}
+
+.cadastro-usuario{
+     width:800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align:center;
+}
+
+.login-usuario{
+    width:800px;
+    margin: 0 auto;
+    padding: 50px;
+    text-align:center;
+}
+
+.menu-funcoes{
+    text-align:center;
+     margin: 0 auto;
+}
+
+.img_produto{
+    width: 100px;
+    height: 100px;
+    align-content: center;
+}
+
+.preco{
+    font-size: 20px;
+    color: red;
+}
+
+.divproduto{
+    text-align: center;
+}
+
+.cadastre{
+    border: 2px solid black;
+}
+
+
+

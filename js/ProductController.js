@@ -14,11 +14,9 @@ ProductController.init();
 
 function alertInnerHTML(e)
 {
-    console.log("ABC");
     var json = JSON.parse(localStorage['list-products']);
-    console.log("ABC");
     for (i=0;i<json.length;i++){
-            if (json[i].nome == this.innerHTML){
+            if (json[i].codigo == this.innerHTML){
                 json.splice(i,1);
             }
     }
