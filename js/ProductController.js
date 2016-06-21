@@ -13,8 +13,15 @@ var ProductController = {
 ProductController.init();
 
 function displayProductsLess10() {
+    document.getElementById('tbl-products-10').innerHTML="<th>Código</th><th>Produto</th><th>Marca</th><th>Departamento</th><th>Preço</th><th>Estoque</th><th>Imagem</th>";
     var produtos = ProductService.getProducts();
     produtos.forEach(ProductHTMLService.displayProducts10);
+}
+
+function displayMoreThan100() {
+    document.getElementById('tbl-products-10').innerHTML="<th>Código</th><th>Produto</th><th>Marca</th><th>Departamento</th><th>Preço</th><th>Estoque</th><th>Imagem</th>";
+    var produtos = ProductService.getProducts();
+    produtos.forEach(ProductHTMLService.displayProducts100);
 }
 
 function alertInnerHTML(e)
@@ -23,6 +30,8 @@ function alertInnerHTML(e)
     for (i=0;i<json.length;i++){
             if (json[i].codigo == this.innerHTML){
                 json.splice(i,1);
+                document.getElementById('tbl-products').innerHTML="<th>Código</th><th>Produto</th><th>Marca</th><th>Departamento</th><th>Preço</th><th>Estoque</th><th>Imagem</th>";
+                ProductController.displayProdutos();
             }
     }
     localStorage['list-products'] = JSON.stringify(json);
