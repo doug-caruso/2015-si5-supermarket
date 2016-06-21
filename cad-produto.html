@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Cadastro Produto</title>
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>  
+
+<body>
     <div class="form-group" id="menucadprod">
         <h1>Cadastro de Produtos</h1>
     </div>
@@ -20,26 +22,26 @@
         <div class="form-group">
             <label for="nome" class="col-sm-2 control-label">Nome</label>
             <div class="col-sm-10">
-                <input type="text" class="form-control" id="nome">    
+                <input type="text" class="form-control" id="nome">
             </div>
         </div>
         <div class="form-group">
             <label for="marca" class="col-sm-2 control-label">Marca</label>
             <div class="col-sm-10">
-                <input type="text" class="form-control" id="marca">    
+                <input type="text" class="form-control" id="marca">
             </div>
         </div>
         <div class="form-group">
             <label for="preco" class="col-sm-2 control-label">Preço</label>
             <div class="col-sm-10">
-                <input type="text" class="form-control" id="preco">        
+                <input type="text" class="form-control" id="preco">
             </div>
-        
+
         </div>
         <div class="form-group">
             <label for="Departamento" class="col-sm-2 control-label">Departamento</label>
-                <div class="col-sm-10">
-                     <select name="optDepartamento" id="departamento" class="form-control">
+            <div class="col-sm-10">
+                <select name="optDepartamento" id="departamento" class="form-control">
                 <option value="bebidas">Bebidas</option>
 					<option value="mercearia">Mercearia</option>
 					<option value="biscoito-chocolate">Biscoitos e Chocolates</option>
@@ -51,26 +53,28 @@
 					<option value="bazar">Bazar</option>
 					<option value="animais">Animais</option>	
                 </select>
-                </div>
+            </div>
         </div>
 
         <div class="form-group">
             <label for="estoque" class="col-sm-2 control-label">Estoque Inicial</label>
             <div class="col-sm-10">
-                <input type="number" class="form-control" id="estoque">    
+                <input type="number" class="form-control" id="estoque">
             </div>
         </div>
 
         <div class="form-group">
             <label for="imagems" class="col-sm-2 control-label">Imagem: </label>
             <div class="col-sm-10">
-                <input type="file" class="form-control" id="imagem">    
+                <input type="file" class="form-control" id="imagem">
             </div>
         </div>
-    <button type="submit" formaction="produto.html" class="btn btn-primary">Salvar</button>
+        <a href="produtos.html" class="btn btn-danger">Voltar</a>
+        <button type="submit" formaction="produto.html" class="btn btn-primary">Salvar</button>
     </form>
-<script src="js/cadProductService.js"></script>
-<script src="js/ProductHTMLService.js"></script>
-<script src="js/cadProductController.js"></script>
+    <script src="js/cadProductService.js"></script>
+    <script src="js/ProductHTMLService.js"></script>
+    <script src="js/cadProductController.js"></script>
 </body>
+
 </html>
