@@ -4,6 +4,7 @@
     padding: 20px;
     text-align:center;
     background-color: honeydew;
+    border:2px #333 solid;
 }
 #proddiv{
     width:800px;
@@ -11,6 +12,7 @@
     padding: 20px;
     text-align:center;
     background-color:  honeydew;
+    border:2px #333 solid;
 }
 #menuprod{
     width:800px;
@@ -18,6 +20,7 @@
     padding: 20px;
     text-align:center;
     background-color: silver;
+    border:2px #333 solid;
 }
 
 #menucadprod{
@@ -26,4 +29,5 @@
     padding: 20px;
     text-align:center;
     background-color: silver;
+    border:2px #333 solid;
 }
