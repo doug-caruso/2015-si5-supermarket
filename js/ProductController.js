@@ -37,7 +37,7 @@ function alertInnerHTML(e)
     }
     localStorage['list-products'] = JSON.stringify(json);
 }
-var theTbl = document.getElementById('tb');
+var theTbl = document.getElementById('tb-exl');
 for(var i=0;i<theTbl.rows.length;i++)
 {
     for(var j=0;j<theTbl.rows[i].cells.length;j++)
