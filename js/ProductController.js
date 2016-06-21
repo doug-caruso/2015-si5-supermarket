@@ -12,6 +12,11 @@ var ProductController = {
 
 ProductController.init();
 
+function displayProductsLess10() {
+    var produtos = ProductService.getProducts();
+    produtos.forEach(ProductHTMLService.displayProducts10);
+}
+
 function alertInnerHTML(e)
 {
     var json = JSON.parse(localStorage['list-products']);
